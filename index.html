@@ -12,7 +12,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <title>AIT-TRC Support</title>
+    <title>AIT-Uninet Support</title>
   </head>
   <body>
     <center>
@@ -23,15 +23,16 @@
       <section class="box-Thistle">
         <select name="shift" id="shiftSelect" onfocus="this.size=4;" onblur="this.size=1;" onchange="this.size=4; this.blur(); checkselect()">
           <option class="silver" value="">--Choose your work shift--</option>
-          <option class="aqua" value="bnoon" Align="center">SHIFT 7:00-15:00</option>
+          <option class="aqua" value="9hour" Align="center">SHIFT 9:00-18:00</option>
           <!-- <option class="rblue" value="business" Align="center">BUSINESS DAY</option> -->
-          <option class="mblue" value="anoon" Align="center">SHIFT 14:00-22:00</option>
+          <option class="mblue" value="12hour" Align="center">SHIFT 9:00-21:00</option>
         </select>
         <br><br>
           <label class="form-check-label free"></label>
-          <input class="form-check-input" type="radio" id="locTRC" name="select_loc" value="TRC" checked>
-          <label class="form-check-label" for="locTRC">TRC</label>
-          <label class="form-check-label free"> </label>
+          <input class="form-check-input" type="radio" id="locUninet" name="select_loc" value="Uninet" checked>
+          <label class="form-check-label" for="locUninet">Uninet</label>
+          <input class="form-check-input" type="radio" id="locKSL" name="select_loc" value="KSL" >
+          <label class="form-check-label" for="locKSL">KSL</label>
           <input class="form-check-input" type="radio" id="locWFH" name="select_loc" value="WFH">
           <label class="form-check-label" for="locWFH">WFH</label>
         <br><br>
@@ -45,10 +46,10 @@
 
 <script>
 window.onload = function() {
-  initializeLiff('2004694704-N8jaRbej');
+  initializeLiff('2005475384-6ly5XnXJ');
 }
 
-const xurl = "https://script.google.com/macros/s/AKfycby8HBZtSxTUswJO6AMREOXrwtWB6YRurS-lRCmmqMeAdlVUjv6_aIQz1G-ctovOhqWT/exec";
+const xurl = "https://script.google.com/macros/s/AKfycbySAv2xscQkbQYPxD3hRTpWDDD7Hed70BOzBddw9M3OCsEFJRnLXk2K0vgfPZhablX3NQ/exec";
 
 function initializeLiff(myLiffId) {
     liff
