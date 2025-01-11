@@ -74,7 +74,6 @@ function checks(){
 
     if(hh >= 0){
         //document.getElementById("cin").classList.remove('invisible');
-    //}else if(hh >= 13){
         //document.getElementById("cout").classList.remove('invisible');
     }else{
         alert("ไม่สามารถเช็คอิน/เอาท์ได้ในช่วงเวลา 0.00-6.00 "+hh+":"+mm);
@@ -98,8 +97,6 @@ function checkselect() {
     document.getElementById("cout").classList.remove('invisible');
   }
 }
-
-var x = document.getElementById("demo");
 
 //-Location-In-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -131,10 +128,8 @@ function showPosition(position) {
       if (this.readyState == 4 && this.status == 200) {
           var jsonResponse = JSON.parse(this.responseText);
       }
-      //alert(jsonResponse.desc);
       Swal.fire(jsonResponse.header, jsonResponse.desc, jsonResponse.alert).then(() => { liff.closeWindow(); });
     }
-     
   });  
 }
 
@@ -168,7 +163,6 @@ function showPositionOut(position) {
       if (this.readyState == 4 && this.status == 200) {
           var jsonResponse = JSON.parse(this.responseText);
       }
-      //alert(jsonResponse.desc);
       Swal.fire(jsonResponse.header, jsonResponse.desc, jsonResponse.alert).then(() => { liff.closeWindow(); });
     }});  
 }
